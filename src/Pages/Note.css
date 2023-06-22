@@ -1,0 +1,39 @@
+/* .class1{
+    /* position: fixed;
+    left: 30%;
+    top:30%; 
+    @media (max-width: 640px) {
+        max-width: 100vw;
+       
+     
+ 
+       }
+    
+   
+} */
+
+
+.card{
+    /* background-color: #fff; */
+    /* border: 1px solid rgba(0, 0, 0, 0.862); */
+    border-radius: 3px;
+    /* float: left; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+   min-width: 600px;
+   
+    height: 100vh;
+    @media (max-width: 640px) {
+       
+       min-width: 100vw;
+       padding: 0;
+     
+ 
+       }
+    
+   
+   
+    
+}
