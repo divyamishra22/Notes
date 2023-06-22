@@ -5,6 +5,12 @@
     justify-content: center;
     align-items: center;
     margin-left: 480px;
+    @media (max-width: 640px) {
+       min-width: 100vw; 
+      
+       margin-left: 0px;
+
+      }
    
 }
 
@@ -12,6 +18,11 @@
    
     width: 100%;
     height: auto;
+    @media (max-width: 640px) {
+        width: 50%; 
+ 
+       }
+   
 }
 
 .form1 form{
@@ -50,6 +61,8 @@
     &:hover {
       background-color: #38ff;
     }
+   
+ 
 }
 
 .form1 form span{
