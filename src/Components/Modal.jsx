@@ -21,7 +21,7 @@ useEffect(()=>{
 
 
 
-        fetch(`http://localhost:3000/note/${id}`, {
+        fetch(`http://ec2-16-171-177-112.eu-north-1.compute.amazonaws.com:3000/note/${id}`, {
         method: "put",
         headers: {
           "Authorization": "Bearer " + localStorage.getItem("jwt"),

@@ -27,7 +27,7 @@ const Search = ({setModalOpen}) => {
         // senote(res.data)
         // setTerm('')
 
-        fetch(`http://localhost:3000/note/search/${term}`, {
+        fetch(`http://ec2-16-171-177-112.eu-north-1.compute.amazonaws.com:3000/note/search/${term}`, {
             method: "get",
             headers: {
               "Authorization": "Bearer " + localStorage.getItem("jwt"),

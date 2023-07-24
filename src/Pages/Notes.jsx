@@ -30,7 +30,7 @@ if(notes)
 
    
      console.log(id)
-    fetch(`http://localhost:3000/note/deleteyournote/${id}`, {
+    fetch(`http://ec2-16-171-177-112.eu-north-1.compute.amazonaws.com:3000/note/deleteyournote/${id}`, {
       method: "delete",
       headers: {
         "Authorization": "Bearer " + localStorage.getItem("jwt"),
