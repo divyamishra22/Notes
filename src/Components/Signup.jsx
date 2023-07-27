@@ -34,7 +34,7 @@ const SignUp = () => {
   
   const getMyPostData = async () => {
     try {
-      const res = await axios.post("http://ec2-16-171-177-112.eu-north-1.compute.amazonaws.com:3000/user/signup",{
+      const res = await axios.post("https://notefinal.onrender.com/user/signup",{
         password: password,
         email:email,
         name: name,

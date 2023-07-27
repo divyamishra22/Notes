@@ -25,10 +25,10 @@ export function AuthProvider({ children }) {
   
     const SignIn = async ({ email, password }) => {
       try {
-        const res = await api.post("http://ec2-16-171-177-112.eu-north-1.compute.amazonaws.com:3000/auth/login",{password: password, email:email,})
+        const res = await api.post("https://notefinal.onrender.com/auth/login",{password: password, email:email,})
         console.log(res.data);
         localStorage.setItem("jwt", res.data)
-    const user = await api.get('http://ec2-16-171-177-112.eu-north-1.compute.amazonaws.com:3000/user/auth/me',{
+    const user = await api.get('https://notefinal.onrender.com/user/auth/me',{
       headers:{
         "Authorization": "Bearer " + localStorage.getItem("jwt")   
       }
@@ -48,7 +48,7 @@ export function AuthProvider({ children }) {
       const editUser = async({password, name, email})=> {
         
         console.log(name);
-      const res = await api.patch('http://ec2-16-171-177-112.eu-north-1.compute.amazonaws.com:3000/user/id', {
+      const res = await api.patch('https://notefinal.onrender.com/user/id', {
         password,
         name,
         email,
