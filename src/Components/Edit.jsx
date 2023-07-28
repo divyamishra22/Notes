@@ -18,7 +18,7 @@ const Edit = ({note}) => {
        const editNote = async({title, description, id})=> {
       
         
-      const res = await api.patch(`https://notefinal.onrender.com/note/updateyournote/${id}`, {
+      const res = await api.patch(`https://y1ewrstt8d.execute-api.eu-north-1.amazonaws.com/note/updateyournote/${id}`, {
        title,
        description
       },

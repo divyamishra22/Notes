@@ -34,7 +34,7 @@ const SignUp = () => {
   
   const getMyPostData = async () => {
     try {
-      const res = await axios.post("https://notefinal.onrender.com/user/signup",{
+      const res = await axios.post("https://y1ewrstt8d.execute-api.eu-north-1.amazonaws.com/user/signup",{
         password: password,
         email:email,
         name: name,

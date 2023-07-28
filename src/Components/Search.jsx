@@ -27,7 +27,7 @@ const Search = ({setModalOpen}) => {
         // senote(res.data)
         // setTerm('')
 
-        fetch(`https://notefinal.onrender.com/note/search/${term}`, {
+        fetch(`https://y1ewrstt8d.execute-api.eu-north-1.amazonaws.com/note/search/${term}`, {
             method: "get",
             headers: {
               "Authorization": "Bearer " + localStorage.getItem("jwt"),

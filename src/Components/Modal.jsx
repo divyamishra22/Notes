@@ -21,7 +21,7 @@ useEffect(()=>{
 
 
 
-        fetch(`https://notefinal.onrender.com/note/${id}`, {
+        fetch(`https://y1ewrstt8d.execute-api.eu-north-1.amazonaws.com/note/${id}`, {
         method: "put",
         headers: {
           "Authorization": "Bearer " + localStorage.getItem("jwt"),

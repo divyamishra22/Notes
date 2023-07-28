@@ -30,7 +30,7 @@ if(notes)
 
    
      console.log(id)
-    fetch(`https://notefinal.onrender.com/note/deleteyournote/${id}`, {
+    fetch(`https://y1ewrstt8d.execute-api.eu-north-1.amazonaws.com/note/deleteyournote/${id}`, {
       method: "delete",
       headers: {
         "Authorization": "Bearer " + localStorage.getItem("jwt"),

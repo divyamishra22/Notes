@@ -14,7 +14,7 @@ const MyNotes = () => {
  
   const  handlenote= async(e)=>{
     e.preventDefault();
-   const res = await api.post(`https://notefinal.onrender.com/note/createyournote`, {title, description},
+   const res = await api.post(`https://y1ewrstt8d.execute-api.eu-north-1.amazonaws.com/note/createyournote`, {title, description},
          
           {headers: {
             "Authorization": "Bearer " + localStorage.getItem("jwt"),

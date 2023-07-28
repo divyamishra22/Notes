@@ -12,7 +12,7 @@ export function NoteProvider({ children }) {
 
     const getnotes = useCallback( async()=>{
   
-        const res = await api.get(`https://notefinal.onrender.com/note/getyournote`, 
+        const res = await api.get(`https://y1ewrstt8d.execute-api.eu-north-1.amazonaws.com/note/getyournote`, 
               
                {headers: {
                  "Authorization": "Bearer " + localStorage.getItem("jwt"),
